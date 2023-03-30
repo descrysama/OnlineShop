@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api.OnlineShop.Datas.Repository.Contract\Api.OnlineShop.Datas.Repository.Contract.csproj" />
+    <ProjectReference Include="..\Api.OnlineShop.Datas.Repository\Api.OnlineShop.Datas.Repository.csproj" />
+    <ProjectReference Include="..\Api.OnlineShop.Datas.Context\Api.OnlineShop.Datas.Context.csproj" />
+    <ProjectReference Include="..\Api.OnlineShop.Services\Api.OnlineShop.Services.csproj" />
+  </ItemGroup>
+</Project>
