@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Services/UserService.cs">
+    <Files>
+      <File FileName="Api.OnlineShop/Program.cs" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/User.cs" />
+      <File FileName="Api.OnlineShop.Services/UserService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineShopFix" expanded="True">
+            <Node name="Business" expanded="True" />
+            <Node name="Api.OnlineShop" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

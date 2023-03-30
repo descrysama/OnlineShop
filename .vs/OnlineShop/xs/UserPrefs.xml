@@ -1,19 +1,17 @@
-﻿<Properties StartupConfiguration="{347161DB-0E1E-4D1E-860F-6CCDFB4CA7D8}|Default">
+﻿<Properties StartupConfiguration="Plusieurs projets">
   <MonoDevelop.Ide.ItemProperties.Api.OnlineShop.IoC FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.IoC/IoCApplication.cs">
     <Files>
-      <File FileName="Api.OnlineShop/Program.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop/Program.cs" />
+      <File FileName="Api.OnlineShop.IoC/IoCApplication.cs" Line="47" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineShop" expanded="True">
-            <Node name="Business" expanded="True" selected="True">
-              <Node name="Api.OnlineShop.Services" expanded="True" />
-            </Node>
-            <Node name="Datas" expanded="True" />
-            <Node name="Api.OnlineShop" expanded="True">
-              <Node name="Properties" expanded="True" />
+            <Node name="Api.OnlineShop" expanded="True" />
+            <Node name="Api.OnlineShop.IoC" expanded="True">
+              <Node name="IoCApplication.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -27,8 +25,13 @@
   <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Entities PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Business.Api.OnlineShop.Dtos FirstBuild="True" />
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Plusieurs projets" Name="Plusieurs projets">
+      <Items>
+        <StartupItem ItemId="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}" ItemName="Api.OnlineShop" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
