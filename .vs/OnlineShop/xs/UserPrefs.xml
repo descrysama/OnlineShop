@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{9A44BCDE-DD2E-42E4-A0E7-5EEAD10B9047}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.Business.Api.OnlineShop.Dtos FirstBuild="True" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Repository.Contract FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

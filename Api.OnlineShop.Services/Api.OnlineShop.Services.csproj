@@ -10,5 +10,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Api.OnlineShop.Datas.Entities\Api.OnlineShop.Datas.Entities.csproj" />
     <ProjectReference Include="..\Api.OnlineShop.Datas.Repository.Contract\Api.OnlineShop.Datas.Repository.Contract.csproj" />
+    <ProjectReference Include="Api.OnlineShop.Dtos\Api.OnlineShop.Dtos.csproj" />
   </ItemGroup>
 </Project>
