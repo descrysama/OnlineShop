@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.OnlineShop.Datas.Repository
 {
-    public class OrderProductRepository : GenericRepository<OrderProduct>, IOrderProductRepository
+    public class AddressRepository : GenericRepository<Address>, IAddressRepository
     {
-        public OrderProductRepository(OnlineShopDbContext dbContext) : base(dbContext)
+        public AddressRepository(OnlineShopDbContext dbContext) : base(dbContext)
         {
         }
 

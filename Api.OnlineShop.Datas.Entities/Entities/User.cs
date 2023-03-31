@@ -13,7 +13,7 @@ public partial class User
 
     public int AddressId { get; set; }
 
-    public virtual Address Address { get; set; } = null!;
+    public virtual Address Address { get; set; }
 
     public virtual ICollection<Order> Orders { get; } = new List<Order>();
 }

@@ -1,28 +1,62 @@
-﻿<Properties StartupConfiguration="{9A44BCDE-DD2E-42E4-A0E7-5EEAD10B9047}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.ItemProperties.Business.Api.OnlineShop.Dtos FirstBuild="True" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Repository.Contract FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Entities PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Services/UserService.cs">
+﻿<Properties StartupConfiguration="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Datas.Entities/Entities/Product.cs">
     <Files>
-      <File FileName="Api.OnlineShop.Services/UserService.cs" Line="16" Column="1" />
+      <File FileName="Api.OnlineShop.Services/UserService.cs" />
+      <File FileName="Api.OnlineShop.Dtos/UserDto.cs" />
+      <File FileName="Api.OnlineShop.Datas.Repository/GenericRepository.cs" Line="12" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Context/OnlineShopDbContext.cs" />
+      <File FileName="Api.OnlineShop.Datas.Repository/OrderRepository.cs" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Product.cs" Line="20" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/User.cs" Line="20" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/OrderProduct.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Order.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Address.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineShop" expanded="True">
             <Node name="Business" expanded="True">
+              <Node name="Api.OnlineShop.Dtos" expanded="True">
+                <Node name="Mapper" expanded="True" />
+              </Node>
               <Node name="Api.OnlineShop.Services" expanded="True" />
             </Node>
             <Node name="Datas" expanded="True">
-              <Node name="Api.OnlineShop.Datas.Repository" selected="True" />
+              <Node name="Api.OnlineShop.Datas.Context" expanded="True" />
+              <Node name="Api.OnlineShop.Datas.Entities" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Datas.Repository" expanded="True" />
+              <Node name="Api.OnlineShop.Datas.Repository.Contract" expanded="True" />
             </Node>
+            <Node name="Api.OnlineShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop.IoC" expanded="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <DisabledProjects>
+    <String>Api.OnlineShop.Services/Api.OnlineShop.Dtos/Api.OnlineShop.Dtos.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Entities PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Plusieurs projets" Name="Plusieurs projets">
+      <Items>
+        <StartupItem ItemId="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}" ItemName="Api.OnlineShop" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

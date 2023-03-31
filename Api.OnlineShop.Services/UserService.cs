@@ -1,7 +1,8 @@
 ﻿using System;
 using Api.OnlineShop.Datas.Repository.Contract;
-using Api.OnlineShop.Datas.Entities;
+using Api.OnlineShop.Datas.Entities.Entities;
 using Api.OnlineShop.Dtos;
+using Api.OnlineShop.Dtos.Mapper;
 
 namespace Api.OnlineShop.Services
 {
@@ -14,10 +15,14 @@ namespace Api.OnlineShop.Services
             _userRepository = repositoryUser;
 		}
 
-		public async Task<createUserDto> createUser(createUserDto departement)
+		public async Task<User> createUser(User userToCreate)
 		{
 
-		}
+            User user = await _userRepository.Create(userToCreate).ConfigureAwait(false);
+
+            return user;
+
+        }
 	}
 }
 

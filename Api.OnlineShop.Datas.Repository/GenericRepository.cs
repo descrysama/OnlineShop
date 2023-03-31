@@ -8,12 +8,12 @@ namespace Api.OnlineShop.Datas.Repository
 	public abstract class GenericRepository<T> : IGenericRepository<T>  where T : class
 	{
 
-		protected readonly DbContext _dbContext;
+		protected readonly OnlineShopDbContext _dbContext;
 
         protected readonly DbSet<T> _table;
 
 
-        protected GenericRepository(DbContext dbContext)
+        protected GenericRepository(OnlineShopDbContext dbContext)
 		{
 			_dbContext = dbContext;
 			_table = _dbContext.Set<T>();
