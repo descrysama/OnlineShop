@@ -33,6 +33,7 @@ namespace Api.OnlineShop.IoC
 
             services.AddScoped<UserService>();
             services.AddScoped<AddressService>();
+            services.AddScoped<ProductService>();
 
             return services;
         }

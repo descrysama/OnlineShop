@@ -5,6 +5,7 @@ namespace Api.OnlineShop.Datas.Repository.Contract
 {
     public interface IUserRepository : IGenericRepository<User>
     {
+        public Task<User> FindOneByEmail(string id);
     }
 }
 

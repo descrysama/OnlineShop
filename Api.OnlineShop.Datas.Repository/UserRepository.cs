@@ -12,6 +12,20 @@ namespace Api.OnlineShop.Datas.Repository
         {
         }
 
+        public async Task<User> FindOneByEmail(string id)
+        {
+            User type = await _table.FirstOrDefaultAsync(u => u.Email == id);
+            Console.WriteLine(type);
+            if (type == null)
+            {
+                return null;
+            }
+            else
+            {
+                return await _table.FirstOrDefaultAsync(u => u.Email == id);
+            }
+        }
+
     }
 }
 
