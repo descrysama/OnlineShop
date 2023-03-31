@@ -1,4 +1,6 @@
 ﻿using Api.OnlineShop.IoC;
+using Api.OnlineShop.Datas.Repository.Contract;
+using Api.OnlineShop.Datas.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;

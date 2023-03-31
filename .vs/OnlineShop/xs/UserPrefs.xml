@@ -1,20 +1,40 @@
-﻿<Properties StartupConfiguration="Plusieurs projets">
-  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop.IoC FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.IoC/IoCApplication.cs">
+﻿<Properties StartupConfiguration="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Datas.Repository/GenericRepository.cs">
     <Files>
-      <File FileName="Api.OnlineShop/Program.cs" />
-      <File FileName="Api.OnlineShop.IoC/IoCApplication.cs" Line="47" Column="6" />
+      <File FileName="Api.OnlineShop/Controllers/WeatherForecastController.cs" Line="16" Column="36" />
+      <File FileName="Api.OnlineShop.Services/UserService.cs" Line="23" Column="63" />
+      <File FileName="Api.OnlineShop.Dtos/UserDto.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Repository/GenericRepository.cs" Line="12" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Context/OnlineShopDbContext.cs" Line="33" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Repository/OrderRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineShop" expanded="True">
-            <Node name="Api.OnlineShop" expanded="True" />
-            <Node name="Api.OnlineShop.IoC" expanded="True">
-              <Node name="IoCApplication.cs" selected="True" />
+            <Node name="Business" expanded="True">
+              <Node name="Api.OnlineShop.Dtos" expanded="True">
+                <Node name="Mapper" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Services" expanded="True" />
             </Node>
+            <Node name="Datas" expanded="True">
+              <Node name="Api.OnlineShop.Datas.Context" expanded="True" />
+              <Node name="Api.OnlineShop.Datas.Entities" expanded="True" selected="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Datas.Repository" expanded="True" />
+              <Node name="Api.OnlineShop.Datas.Repository.Contract" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop.IoC" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

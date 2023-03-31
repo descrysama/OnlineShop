@@ -14,5 +14,17 @@
     <ProjectReference Include="..\Api.OnlineShop.IoC\Api.OnlineShop.IoC.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Api.OnlineShop.Datas.Repository.Contract\Api.OnlineShop.Datas.Repository.Contract.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Api.OnlineShop.Datas.Repository\Api.OnlineShop.Datas.Repository.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Api.OnlineShop.Services\Api.OnlineShop.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Api.OnlineShop.Dtos\Api.OnlineShop.Dtos.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
