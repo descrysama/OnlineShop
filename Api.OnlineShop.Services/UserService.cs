@@ -23,6 +23,21 @@ namespace Api.OnlineShop.Services
             return user;
 
         }
-	}
+        public async Task<List<UserDto>> FindAll()
+        {
+
+            var users = await _userRepository.FindAll().ConfigureAwait(false);
+
+            List<UserDto> fetchedUsers = new();
+
+            foreach(var user in users)
+            {
+                fetchedUsers.Add(EntityToClass.userTransform(user));
+            }
+
+            return fetchedUsers;
+
+        }
+    }
 }
 

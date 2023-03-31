@@ -3,6 +3,11 @@ using Api.OnlineShop.Services;
 using Api.OnlineShop.Dtos;
 using Api.OnlineShop.Dtos.Mapper;
 using Api.OnlineShop.Datas.Entities.Entities;
+using Microsoft.AspNetCore.Authorization;
+
+using Microsoft.AspNetCore.Http;
+using Api.OnlineShop.Utilities;
+
 namespace Api.OnlineShop.Controllers;
 
 [ApiController]
@@ -13,13 +18,16 @@ public class UserController : ControllerBase
 
     private readonly AddressService _addressService;
 
-    public UserController(UserService userService, AddressService addressService)
+    private readonly IConfiguration _configuration;
+
+    public UserController(UserService userService, AddressService addressService, IConfiguration configuration)
     {
         _userService = userService;
         _addressService = addressService;
+        _configuration = configuration;
     }
 
-    [HttpPost()]
+    [HttpPost("create")]
     public async Task<UserDto> Create(createUserDto newUser)
     {
         Address addressToCreate = new Address()
@@ -39,7 +47,31 @@ public class UserController : ControllerBase
         };
         User createdUser = await _userService.createUser(userToCreate).ConfigureAwait(false);
 
+        var cookieOptions = new CookieOptions
+        {
+            Expires = DateTime.UtcNow.AddDays(7),
+            Path = "/",
+            Secure = true,
+            SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict
+        };
+
+        Response.Cookies.Append("_auth", JwtGenerator.GenerateJwtToken(createdUser.Id.ToString(), createdUser.Email, _configuration), cookieOptions);
         return EntityToClass.userTransform(createdUser);
+    }
+
+    [Authorize]
+    [HttpGet("all")]
+    public async Task<IEnumerable<UserDto>> GetAll()
+    {
+        List<UserDto> allUsers = await _userService.FindAll().ConfigureAwait(false);
+
+        if(allUsers != null)
+        {
+            return allUsers;
+        } else
+        {
+            return null;
+        }
     }
 }
 
