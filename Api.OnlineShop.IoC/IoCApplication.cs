@@ -19,6 +19,7 @@ namespace Api.OnlineShop.IoC
             // - Repositories
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAddressRepository, AddressRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderProductRepository, OrderProductRepository>();
@@ -31,6 +32,7 @@ namespace Api.OnlineShop.IoC
         {
 
             services.AddScoped<UserService>();
+            services.AddScoped<AddressService>();
 
             return services;
         }

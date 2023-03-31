@@ -11,9 +11,9 @@ public partial class User
 
     public string Password { get; set; } = null!;
 
-    public int? AddressId { get; set; }
+    public int AddressId { get; set; }
 
-    public virtual Address Address { get; set; } = null!;
+    public virtual Address Address { get; set; }
 
     public virtual ICollection<Order> Orders { get; } = new List<Order>();
 }

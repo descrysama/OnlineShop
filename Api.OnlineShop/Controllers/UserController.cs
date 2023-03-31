@@ -11,17 +11,35 @@ public class UserController : ControllerBase
 {
     private readonly UserService _userService;
 
-    public UserController(UserService userService)
+    private readonly AddressService _addressService;
+
+    public UserController(UserService userService, AddressService addressService)
     {
         _userService = userService;
+        _addressService = addressService;
     }
 
     [HttpPost()]
-    public async Task<User> Create(User newUser)
+    public async Task<UserDto> Create(createUserDto newUser)
     {
-        User createdUser = await _userService.createUser(newUser).ConfigureAwait(false);
+        Address addressToCreate = new Address()
+        {
+            Street = newUser.Street,
+            City = newUser.City,
+            Country = newUser.Country
+        };
 
-        return createdUser;
+        Address createdAddress = await _addressService.createAddress(addressToCreate).ConfigureAwait(false);
+
+        User userToCreate = new User()
+        {
+            Email = newUser.Email,
+            Password = newUser.Password,
+            AddressId = createdAddress.Id
+        };
+        User createdUser = await _userService.createUser(userToCreate).ConfigureAwait(false);
+
+        return EntityToClass.userTransform(createdUser);
     }
 }
 

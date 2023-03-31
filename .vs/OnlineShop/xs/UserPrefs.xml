@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Datas.Repository/GenericRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Datas.Entities/Entities/Product.cs">
     <Files>
-      <File FileName="Api.OnlineShop/Controllers/WeatherForecastController.cs" Line="16" Column="36" />
-      <File FileName="Api.OnlineShop.Services/UserService.cs" Line="23" Column="63" />
-      <File FileName="Api.OnlineShop.Dtos/UserDto.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Services/UserService.cs" />
+      <File FileName="Api.OnlineShop.Dtos/UserDto.cs" />
       <File FileName="Api.OnlineShop.Datas.Repository/GenericRepository.cs" Line="12" Column="1" />
-      <File FileName="Api.OnlineShop.Datas.Context/OnlineShopDbContext.cs" Line="33" Column="1" />
-      <File FileName="Api.OnlineShop.Datas.Repository/OrderRepository.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Context/OnlineShopDbContext.cs" />
+      <File FileName="Api.OnlineShop.Datas.Repository/OrderRepository.cs" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Product.cs" Line="20" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/User.cs" Line="20" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/OrderProduct.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Order.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Address.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +24,7 @@
             </Node>
             <Node name="Datas" expanded="True">
               <Node name="Api.OnlineShop.Datas.Context" expanded="True" />
-              <Node name="Api.OnlineShop.Datas.Entities" expanded="True" selected="True">
+              <Node name="Api.OnlineShop.Datas.Entities" expanded="True">
                 <Node name="Entities" expanded="True" />
               </Node>
               <Node name="Api.OnlineShop.Datas.Repository" expanded="True" />

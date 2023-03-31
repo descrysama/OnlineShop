@@ -18,19 +18,11 @@ namespace Api.OnlineShop.Services
 		public async Task<User> createUser(User userToCreate)
 		{
 
-			try
-			{
-                User user = await _userRepository.Create(userToCreate).ConfigureAwait(false);
+            User user = await _userRepository.Create(userToCreate).ConfigureAwait(false);
 
-				return user;
+            return user;
 
-            } catch(Exception err)
-			{
-				return null;
-			}
-
-
-		}
+        }
 	}
 }
 
