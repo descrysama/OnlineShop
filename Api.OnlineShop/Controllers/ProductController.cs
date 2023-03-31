@@ -23,18 +23,33 @@ public class ProductController : ControllerBase
 
     [Authorize]
     [HttpPost("create")]
-    public async Task<ProductDto> Create(CreateProductDto newProduct)
+    public async Task<IActionResult> Create(CreateProductDto newProduct)
     {
-        Product product = ClassToEntity.CreateProduct(newProduct);
         Product createdProduct = await _productService.createProduct(newProduct).ConfigureAwait(false);
 
         if (createdProduct != null)
         {
-            return EntityToClass.productTransform(createdProduct);
+            return Ok(EntityToClass.productTransform(createdProduct));
         }
         else
         {
-            return null;
+            return BadRequest("Produit non crée, Veuillez verifier vos entrées.");
+        }
+    }
+
+    [Authorize]
+    [HttpPatch()]
+    public async Task<IActionResult> Update(UpdateProductDto newProduct)
+    {
+        Product createdProduct = await _productService.updateProduct(newProduct).ConfigureAwait(false);
+
+        if (createdProduct != null)
+        {
+            return Ok(EntityToClass.productTransform(createdProduct));
+        }
+        else
+        {
+            return BadRequest("Produit non modifié, le produit n'existe pas ou l'Id est mauvais.");
         }
     }
 

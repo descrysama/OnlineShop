@@ -9,7 +9,7 @@ namespace Api.OnlineShop.Datas.Repository.Contract
 
         Task<T> Create(T element);
 
-        Task<T> Update(T element);
+        Task<T> Update(T element, int Id);
 
         Task<T> Remove(T element);
     }

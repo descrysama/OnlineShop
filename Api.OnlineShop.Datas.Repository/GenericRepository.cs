@@ -44,8 +44,15 @@ namespace Api.OnlineShop.Datas.Repository
             return newElement.Entity;
         }
 
-        public async Task<T> Update(T element)
+        public async Task<T> Update(T element, int Id)
         {
+            var existingEntity = _dbContext.Products.Local.SingleOrDefault(p => p.Id == Id);
+
+            if(existingEntity != null)
+            {
+                _dbContext.Entry(existingEntity).State = EntityState.Detached;
+            }
+
             var newElement = _table.Update(element);
             await _dbContext.SaveChangesAsync().ConfigureAwait(false);
 

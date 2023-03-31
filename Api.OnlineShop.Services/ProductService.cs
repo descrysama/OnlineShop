@@ -27,7 +27,15 @@ namespace Api.OnlineShop.Services
 
         public async Task<Product> updateProduct(UpdateProductDto productToUpdate)
         {
-            Product product = await _productRepository.Update(ClassToEntity.UpdateProduct(productToUpdate)).ConfigureAwait(false);
+            Product updateProduct = ClassToEntity.UpdateProduct(productToUpdate);
+            Product productCheck = await _productRepository.FindByKey(updateProduct.Id).ConfigureAwait(false);
+
+            if(productCheck == null)
+            {
+                return null;
+            }
+
+            Product product = await _productRepository.Update(updateProduct, updateProduct.Id).ConfigureAwait(false);
 
             return product;
 
