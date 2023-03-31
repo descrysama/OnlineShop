@@ -63,6 +63,21 @@ namespace Api.OnlineShop.Services
             return product;
 
         }
+        
+        public async Task<Product> deleteProduct(int Id)
+        {
+            Product productCheck = await _productRepository.FindByKey(Id).ConfigureAwait(false);
+
+            if (productCheck == null)
+            {
+                return null;
+            }
+
+            Product product = await _productRepository.Remove(productCheck).ConfigureAwait(false);
+
+            return product;
+
+        }
     }
 }
 

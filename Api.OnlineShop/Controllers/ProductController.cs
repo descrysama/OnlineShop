@@ -90,5 +90,21 @@ public class ProductController : ControllerBase
         }
     }
 
+    [Authorize]
+    [HttpDelete()]
+    public async Task<IActionResult> Delete([FromBody] int Id)
+    {
+        Product deletedProduct = await _productService.deleteProduct(Id).ConfigureAwait(false);
+
+        if (deletedProduct != null)
+        {
+            return Ok(EntityToClass.productTransform(deletedProduct));
+        }
+        else
+        {
+            return BadRequest("Produit non supprimé, le produit n'existe pas ou l'Id est mauvais.");
+        }
+    }
+
 }
 
