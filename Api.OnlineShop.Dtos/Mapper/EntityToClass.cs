@@ -21,6 +21,7 @@ namespace Api.OnlineShop.Dtos.Mapper
         {
             ProductDto product = new ProductDto()
             {
+                Id = oldProduct.Id,
                 Price = oldProduct.Price,
                 Image = oldProduct.Image,
                 Description = oldProduct.Description,

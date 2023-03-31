@@ -17,6 +17,29 @@ namespace Api.OnlineShop.Services
 			_productRepository = productRepository;
 		}
 
+        public async Task<ProductDto> getSingleProduct(int Id)
+        {
+            Product product = await _productRepository.FindByKey(Id).ConfigureAwait(false);
+
+            return EntityToClass.productTransform(product);
+
+        }
+
+        public async Task<List<ProductDto>> GetAll()
+        {
+            var products = await _productRepository.FindAll().ConfigureAwait(false);
+
+            List<ProductDto> allProducts = new();
+
+            foreach(var product in products)
+            {
+                allProducts.Add(EntityToClass.productTransform(product));
+            }
+
+            return allProducts;
+
+        }
+
         public async Task<Product> createProduct(CreateProductDto productToCreate)
         {
             Product product = await _productRepository.Create(ClassToEntity.CreateProduct(productToCreate)).ConfigureAwait(false);

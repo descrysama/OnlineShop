@@ -21,8 +21,45 @@ public class ProductController : ControllerBase
         _productService = productService;
     }
 
+    [HttpGet()]
+    public async Task<IActionResult> getAll()
+    {
+        List<ProductDto> product = await _productService.GetAll().ConfigureAwait(false);
+
+        if (product != null)
+        {
+            return Ok(product);
+        }
+        else
+        {
+            return BadRequest("Produit non crée, Veuillez verifier vos entrées.");
+        }
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetSingle([FromRoute] int id)
+    {
+        try
+        {
+            ProductDto product = await _productService.getSingleProduct(id).ConfigureAwait(false);
+
+            if (product != null)
+            {
+                return Ok(product);
+            }
+            else
+            {
+                return BadRequest("Produit non crée, Veuillez verifier vos entrées.");
+            }
+
+        } catch(Exception error)
+        {
+            return BadRequest("Id non valide, seulement les entiers sont autorisés.");
+        }
+    }
+
     [Authorize]
-    [HttpPost("create")]
+    [HttpPost()]
     public async Task<IActionResult> Create(CreateProductDto newProduct)
     {
         Product createdProduct = await _productService.createProduct(newProduct).ConfigureAwait(false);

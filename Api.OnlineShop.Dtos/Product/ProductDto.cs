@@ -3,6 +3,8 @@ namespace Api.OnlineShop.Dtos
 {
 	public class ProductDto
     {
+        public int Id { get; set; }
+
         public float? Price { get; set; }
 
         public String? Image { get; set; }
