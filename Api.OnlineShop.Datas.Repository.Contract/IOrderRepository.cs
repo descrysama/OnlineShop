@@ -5,6 +5,7 @@ namespace Api.OnlineShop.Datas.Repository.Contract
 {
     public interface IOrderRepository : IGenericRepository<Order>
     {
+        Task<IEnumerable<Order>> FindAllByUser(int UserId);
     }
 }
 

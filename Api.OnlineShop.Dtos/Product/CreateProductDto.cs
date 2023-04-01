@@ -1,6 +1,6 @@
 ﻿using System;
-namespace Api.OnlineShop.Dtos
-{
+namespace Api.OnlineShop.Dtos;
+
 	public class CreateProductDto
     {
         public float Price { get; set; }
@@ -11,5 +11,4 @@ namespace Api.OnlineShop.Dtos
 
         public int Quantity { get; set; }
     }
-}
 

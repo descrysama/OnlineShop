@@ -79,7 +79,7 @@ public class UserController : ControllerBase
                 SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict
             };
 
-            Response.Cookies.Append("_auth", JwtGenerator.GenerateJwtToken(user.Id.ToString(), user.Email, _configuration), cookieOptions);
+            Response.Cookies.Append("_auth", JwtGenerator.GenerateJwtToken(user.Id.ToString(), user.Email.ToString(), _configuration), cookieOptions);
 
             return Ok(EntityToClass.userTransform(user));
         } else

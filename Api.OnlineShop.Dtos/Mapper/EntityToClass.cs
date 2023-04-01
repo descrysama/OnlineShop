@@ -30,6 +30,18 @@ namespace Api.OnlineShop.Dtos.Mapper
 
             return product;
         }
+        
+        public static OrderDto orderTransform(Order oldOrder)
+        {
+            OrderDto product = new OrderDto()
+            {
+                Id = oldOrder.Id,
+                Total = oldOrder.Total,
+                UserId = oldOrder.UserId
+            };
+
+            return product;
+        }
     }
 }
 

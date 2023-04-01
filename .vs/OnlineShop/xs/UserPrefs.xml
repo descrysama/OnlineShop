@@ -16,20 +16,45 @@
   <DisabledProjects>
     <String>Api.OnlineShop.Services/Api.OnlineShop.Dtos/Api.OnlineShop.Dtos.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop/Controllers/OrderController.cs">
     <Files>
-      <File FileName="Api.OnlineShop/Controllers/UserController.cs" Line="54" Column="2" />
-      <File FileName="Api.OnlineShop/Program.cs" Line="34" Column="23" />
+      <File FileName="Api.OnlineShop.Services/OrderService.cs" Line="21" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Order.cs" Line="1" Column="1" />
+      <File FileName="Api.OnlineShop/Controllers/UserController.cs" Line="58" Column="61" />
+      <File FileName="Api.OnlineShop/Controllers/OrderController.cs" Line="29" Column="56" />
+      <File FileName="Api.OnlineShop/Utility/GenerateJwt.cs" Line="14" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineShop" expanded="True">
-            <Node name="Api.OnlineShop" expanded="True" selected="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="Business" expanded="True">
+              <Node name="Api.OnlineShop.Dtos" expanded="True">
+                <Node name="Mapper" expanded="True" />
+                <Node name="Order" expanded="True" />
+                <Node name="Product" expanded="True" />
+                <Node name="User" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Services" expanded="True" />
             </Node>
+            <Node name="Datas" expanded="True">
+              <Node name="Api.OnlineShop.Datas.Entities" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Datas.Repository" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="OrderController.cs" selected="True" />
+              </Node>
+              <Node name="Utility" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop.IoC" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
