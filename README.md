@@ -2,8 +2,7 @@
 
 
 Use case : 
-<img width="1024" alt="image" src="https://user-images.githubusercontent.com/63260058/228792222-9d427bd7-0dd3-4c6d-aa1f-9f2fffbd75f6.png">
-
+<img width="844" alt="image" src="https://user-images.githubusercontent.com/63260058/229286354-43168718-1e5f-48a6-a4af-4c3feb73e561.png">
 
 Digramme base de donnée : 
 
