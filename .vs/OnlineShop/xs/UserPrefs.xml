@@ -1,28 +1,10 @@
 ﻿<Properties StartupConfiguration="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}|Default">
   <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Entities PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations>
-    <MultiItemSolutionRunConfiguration Id="Plusieurs projets" Name="Plusieurs projets">
-      <Items>
-        <StartupItem ItemId="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}" ItemName="Api.OnlineShop" ConfigurationId="Default" />
-      </Items>
-    </MultiItemSolutionRunConfiguration>
-  </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>Api.OnlineShop.Services/Api.OnlineShop.Dtos/Api.OnlineShop.Dtos.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop/Controllers/OrderController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Datas.Repository/OrderRepository.cs">
     <Files>
-      <File FileName="Api.OnlineShop.Services/OrderService.cs" Line="21" Column="1" />
-      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Order.cs" Line="1" Column="1" />
-      <File FileName="Api.OnlineShop/Controllers/UserController.cs" Line="58" Column="61" />
-      <File FileName="Api.OnlineShop/Controllers/OrderController.cs" Line="29" Column="56" />
-      <File FileName="Api.OnlineShop/Utility/GenerateJwt.cs" Line="14" Column="41" />
+      <File FileName="Api.OnlineShop.Datas.Repository/OrderRepository.cs" Line="28" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Order.cs" Line="7" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,8 +14,8 @@
               <Node name="Api.OnlineShop.Dtos" expanded="True">
                 <Node name="Mapper" expanded="True" />
                 <Node name="Order" expanded="True" />
+                <Node name="OrderProduct" expanded="True" />
                 <Node name="Product" expanded="True" />
-                <Node name="User" expanded="True" />
               </Node>
               <Node name="Api.OnlineShop.Services" expanded="True" />
             </Node>
@@ -41,13 +23,13 @@
               <Node name="Api.OnlineShop.Datas.Entities" expanded="True">
                 <Node name="Entities" expanded="True" />
               </Node>
-              <Node name="Api.OnlineShop.Datas.Repository" expanded="True" />
+              <Node name="Api.OnlineShop.Datas.Repository" expanded="True">
+                <Node name="OrderRepository.cs" selected="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Datas.Repository.Contract" expanded="True" />
             </Node>
             <Node name="Api.OnlineShop" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="OrderController.cs" selected="True" />
-              </Node>
-              <Node name="Utility" expanded="True" />
+              <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="Api.OnlineShop.IoC" expanded="True" />
           </Node>
@@ -58,4 +40,19 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <DisabledProjects>
+    <String>Api.OnlineShop.Services/Api.OnlineShop.Dtos/Api.OnlineShop.Dtos.csproj</String>
+  </DisabledProjects>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Plusieurs projets" Name="Plusieurs projets">
+      <Items>
+        <StartupItem ItemId="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}" ItemName="Api.OnlineShop" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

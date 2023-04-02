@@ -12,7 +12,8 @@ public partial class Order
 
     public int UserId { get; set; }
 
-    public virtual ICollection<OrderProduct> OrderProducts { get; } = new List<OrderProduct>();
+    [JsonIgnore]
+    public virtual ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>();
 
     [JsonIgnore]
     public virtual User? User { get; set; }
