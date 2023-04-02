@@ -16,6 +16,32 @@ namespace Api.OnlineShop.Dtos.Mapper
 
 			return user;
 		}
-	}
+
+        public static ProductDto productTransform(Product oldProduct)
+        {
+            ProductDto product = new ProductDto()
+            {
+                Id = oldProduct.Id,
+                Price = oldProduct.Price,
+                Image = oldProduct.Image,
+                Description = oldProduct.Description,
+                Quantity = oldProduct.Quantity
+            };
+
+            return product;
+        }
+        
+        public static OrderDto orderTransform(Order oldOrder)
+        {
+            OrderDto product = new OrderDto()
+            {
+                Id = oldOrder.Id,
+                Total = oldOrder.Total,
+                UserId = oldOrder.UserId
+            };
+
+            return product;
+        }
+    }
 }
 

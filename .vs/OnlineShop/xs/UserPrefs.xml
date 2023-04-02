@@ -1,5 +1,48 @@
 ﻿<Properties StartupConfiguration="{EF5706E6-5142-40DA-A17C-E71AF3974BB8}|Default">
   <MonoDevelop.Ide.ItemProperties.Datas.Api.OnlineShop.Datas.Entities PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop.Datas.Repository/OrderRepository.cs">
+    <Files>
+      <File FileName="Api.OnlineShop.Datas.Repository/OrderRepository.cs" Line="28" Column="1" />
+      <File FileName="Api.OnlineShop.Datas.Entities/Entities/Order.cs" Line="7" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineShop" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Api.OnlineShop.Dtos" expanded="True">
+                <Node name="Mapper" expanded="True" />
+                <Node name="Order" expanded="True" />
+                <Node name="OrderProduct" expanded="True" />
+                <Node name="Product" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Services" expanded="True" />
+            </Node>
+            <Node name="Datas" expanded="True">
+              <Node name="Api.OnlineShop.Datas.Entities" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Datas.Repository" expanded="True">
+                <Node name="OrderRepository.cs" selected="True" />
+              </Node>
+              <Node name="Api.OnlineShop.Datas.Repository.Contract" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Api.OnlineShop.IoC" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <DisabledProjects>
+    <String>Api.OnlineShop.Services/Api.OnlineShop.Dtos/Api.OnlineShop.Dtos.csproj</String>
+  </DisabledProjects>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Plusieurs projets" Name="Plusieurs projets">
       <Items>
@@ -7,30 +50,9 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Api.OnlineShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>Api.OnlineShop.Services/Api.OnlineShop.Dtos/Api.OnlineShop.Dtos.csproj</String>
-  </DisabledProjects>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Api.OnlineShop/Controllers/UserController.cs">
-    <Files>
-      <File FileName="Api.OnlineShop/Controllers/UserController.cs" Line="54" Column="2" />
-      <File FileName="Api.OnlineShop/Program.cs" Line="34" Column="23" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="OnlineShop" expanded="True">
-            <Node name="Api.OnlineShop" expanded="True" selected="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
 </Properties>

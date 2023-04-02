@@ -23,6 +23,7 @@ namespace Api.OnlineShop.Services
             return user;
 
         }
+
         public async Task<List<UserDto>> FindAll()
         {
 
@@ -36,6 +37,16 @@ namespace Api.OnlineShop.Services
             }
 
             return fetchedUsers;
+
+        }
+
+        public async Task<User> FindOne(string key)
+        {
+
+            User user = await _userRepository.FindOneByEmail(key).ConfigureAwait(false);
+
+
+            return user;
 
         }
     }

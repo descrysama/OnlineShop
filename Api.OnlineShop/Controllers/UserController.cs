@@ -27,8 +27,8 @@ public class UserController : ControllerBase
         _configuration = configuration;
     }
 
-    [HttpPost("create")]
-    public async Task<UserDto> Create(createUserDto newUser)
+    [HttpPost("signup")]
+    public async Task<UserDto> SignUp(createUserDto newUser)
     {
         Address addressToCreate = new Address()
         {
@@ -57,6 +57,37 @@ public class UserController : ControllerBase
 
         Response.Cookies.Append("_auth", JwtGenerator.GenerateJwtToken(createdUser.Id.ToString(), createdUser.Email, _configuration), cookieOptions);
         return EntityToClass.userTransform(createdUser);
+    }
+
+    [HttpPost("signin")]
+    public async Task<IActionResult> SignIn(loginUserDto newUser)
+    {
+        User user = await _userService.FindOne(newUser.Email.ToString()).ConfigureAwait(false);
+
+        if(user == null)
+        {
+            return BadRequest("Email ou mot de passe incorrect");
+        }
+
+        if(newUser.Password.Equals(user.Password))
+        {
+            var cookieOptions = new CookieOptions
+            {
+                Expires = DateTime.UtcNow.AddDays(7),
+                Path = "/",
+                Secure = true,
+                SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict
+            };
+
+            Response.Cookies.Append("_auth", JwtGenerator.GenerateJwtToken(user.Id.ToString(), user.Email.ToString(), _configuration), cookieOptions);
+
+            return Ok(EntityToClass.userTransform(user));
+        } else
+        {
+            return BadRequest("Email ou mot de passe incorrect");
+        }
+
+        
     }
 
     [Authorize]

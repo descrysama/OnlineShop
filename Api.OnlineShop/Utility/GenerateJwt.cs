@@ -12,7 +12,7 @@ namespace Api.OnlineShop.Utilities
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, userId),
-                new Claim(JwtRegisteredClaimNames.UniqueName, email)
+                new Claim(ClaimTypes.Email, email)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:SecretKey"]));
